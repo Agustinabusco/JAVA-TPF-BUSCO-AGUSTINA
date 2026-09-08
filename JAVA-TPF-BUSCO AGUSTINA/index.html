@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sitio educativo interactivo para aprender buenas prácticas de seguridad digital.">
+  <title>Inicio | Navega Seguro</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body data-module="inicio">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="Navega Seguro - Inicio">
+      <span class="brand-mark">NS</span><span>Navega Seguro</span>
+    </a>
+    <nav class="site-nav" aria-label="Navegación principal"><a href="index.html" aria-current="page">Inicio</a><a href="contrasenas.html">Contraseñas</a><a href="phishing.html">Phishing</a><a href="desafio.html">Desafío</a><a href="opinion.html">Opinión</a></nav>
+    <div class="nav-actions">
+      <button class="icon-btn" data-theme-toggle type="button" aria-label="Activar modo oscuro" title="Cambiar tema">🌙</button>
+      <button class="icon-btn menu-btn" data-menu-toggle type="button" aria-expanded="false" aria-label="Abrir menú">☰</button>
+    </div>
+  </div>
+</header>
+<main id="contenido">
+<section class="container hero">
+  <div>
+    <span class="eyebrow">🛡️ Ciudadanía digital</span>
+    <h1>Aprendé a <span class="gradient-text">navegar seguro</span></h1>
+    <p class="lead">Una experiencia educativa breve e interactiva para reconocer riesgos, proteger tus cuentas y tomar mejores decisiones en Internet.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="contrasenas.html">Comenzar recorrido →</a>
+      <a class="btn btn-secondary" href="#modulos">Ver módulos</a>
+    </div>
+    <div class="info-strip">
+      <div class="mini-stat"><strong>5 páginas</strong><span>Navegación clara y coherente</span></div>
+      <div class="mini-stat"><strong>3 actividades</strong><span>Práctica con respuesta inmediata</span></div>
+      <div class="mini-stat"><strong>Responsive</strong><span>Adaptado a computadora y celular</span></div>
+    </div>
+  </div>
+  <div class="hero-visual"><img src="img/seguridad-digital.svg" alt="Ilustración de una computadora protegida por un candado y un escudo"></div>
+</section>
+
+<section class="container section-tight" aria-labelledby="progreso-title">
+  <div class="progress-card">
+    <div class="progress-meta"><strong id="progreso-title">Tu recorrido</strong><span data-progress-percent>0%</span></div>
+    <div class="progress-track" aria-hidden="true"><div class="progress-bar" data-progress-bar></div></div>
+    <p class="muted" style="margin:.7rem 0 0" data-progress-text>0 de 4 módulos visitados</p>
+  </div>
+</section>
+
+<section class="container section" id="modulos">
+  <div class="section-heading">
+    <span class="eyebrow">Ruta de aprendizaje</span>
+    <h2>Cuatro pasos para mejorar tus hábitos digitales</h2>
+    <p>Podés recorrerlos en orden o entrar directamente al tema que más te interese.</p>
+  </div>
+  <div class="grid-4">
+    <a class="card card-link" href="contrasenas.html"><div class="card-icon">🔐</div><h3>Contraseñas</h3><p>Aprendé qué características fortalecen una contraseña y probá un analizador en tiempo real.</p><strong>Explorar →</strong></a>
+    <a class="card card-link" href="phishing.html"><div class="card-icon">🎣</div><h3>Phishing</h3><p>Identificá señales de alerta en mensajes y correos mediante situaciones simuladas.</p><strong>Jugar →</strong></a>
+    <a class="card card-link" href="desafio.html"><div class="card-icon">🧠</div><h3>Desafío final</h3><p>Respondé ocho preguntas, recibí retroalimentación y obtené una insignia digital.</p><strong>Resolver →</strong></a>
+    <a class="card card-link" href="opinion.html"><div class="card-icon">💬</div><h3>Tu opinión</h3><p>Completá un formulario demostrativo para valorar la experiencia y practicar validaciones.</p><strong>Participar →</strong></a>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="grid-2">
+    <div class="card">
+      <span class="eyebrow">Idea clave</span>
+      <h2>La seguridad también es un hábito</h2>
+      <p class="muted">No alcanza con conocer herramientas: conviene detenerse, revisar y decidir antes de compartir información, abrir archivos o ingresar credenciales.</p>
+      <ul class="tip-list">
+        <li><span class="tick">✓</span><span>Usá contraseñas largas y diferentes en servicios importantes.</span></li>
+        <li><span class="tick">✓</span><span>Desconfiá de mensajes que exigen actuar de inmediato.</span></li>
+        <li><span class="tick">✓</span><span>Revisá permisos, remitentes y direcciones antes de aceptar.</span></li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="eyebrow">Privacidad</span>
+      <h2>Este sitio funciona de forma local</h2>
+      <p class="muted">Las actividades fueron diseñadas para ejecutarse en el navegador. El formulario es una demostración y no envía información a servidores externos.</p>
+      <div class="notice"><strong>Importante:</strong> no uses contraseñas reales en el analizador. Probá con ejemplos inventados.</div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container footer-wrap">
+    <div><strong>Navega Seguro</strong><br><span>Proyecto educativo sobre ciudadanía y seguridad digital.</span></div>
+    <div>TPF Desarrollo Web · <span data-year></span></div>
+  </div>
+</footer>
+<script src="js/app.js"></script>
+
+</body>
+</html>

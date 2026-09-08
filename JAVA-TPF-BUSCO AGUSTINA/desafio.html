@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cuestionario interactivo para repasar seguridad digital y recibir retroalimentación inmediata.">
+  <title>Desafío final | Navega Seguro</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body data-module="desafio">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="Navega Seguro - Inicio">
+      <span class="brand-mark">NS</span><span>Navega Seguro</span>
+    </a>
+    <nav class="site-nav" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="contrasenas.html">Contraseñas</a><a href="phishing.html">Phishing</a><a href="desafio.html" aria-current="page">Desafío</a><a href="opinion.html">Opinión</a></nav>
+    <div class="nav-actions">
+      <button class="icon-btn" data-theme-toggle type="button" aria-label="Activar modo oscuro" title="Cambiar tema">🌙</button>
+      <button class="icon-btn menu-btn" data-menu-toggle type="button" aria-expanded="false" aria-label="Abrir menú">☰</button>
+    </div>
+  </div>
+</header>
+<main id="contenido">
+<section class="container page-hero">
+  <div>
+    <span class="eyebrow">Módulo 3 · Evaluación formativa</span>
+    <h1>Desafío <span class="gradient-text">final</span></h1>
+    <p class="lead">Ocho preguntas para poner a prueba lo aprendido. Cada respuesta muestra una explicación y al final obtenés una insignia según tu resultado.</p>
+  </div>
+  <div class="visual-card"><img src="img/quiz.svg" alt="Ilustración de una lista de preguntas con opciones de respuesta"></div>
+</section>
+
+<section class="container section">
+  <div class="demo-panel" id="quizApp" aria-live="polite"></div>
+</section>
+
+<section class="container section-tight">
+  <div class="grid-2">
+    <div class="card"><h3>¿Para qué sirve este quiz?</h3><p class="muted">No busca memorizar definiciones. Las preguntas plantean decisiones cotidianas para reconocer prácticas más seguras.</p></div>
+    <div class="card"><h3>Retroalimentación inmediata</h3><p class="muted">Después de cada elección se explica la razón. Podés volver a intentarlo y mejorar tu mejor puntaje.</p></div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container footer-wrap">
+    <div><strong>Navega Seguro</strong><br><span>Proyecto educativo sobre ciudadanía y seguridad digital.</span></div>
+    <div>TPF Desarrollo Web · <span data-year></span></div>
+  </div>
+</footer>
+<script src="js/app.js"></script>
+<script src="js/quiz.js"></script>
+</body>
+</html>

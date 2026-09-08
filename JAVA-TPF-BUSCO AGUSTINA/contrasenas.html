@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aprendé a crear contraseñas más resistentes mediante un analizador interactivo.">
+  <title>Contraseñas seguras | Navega Seguro</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body data-module="contrasenas">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="Navega Seguro - Inicio">
+      <span class="brand-mark">NS</span><span>Navega Seguro</span>
+    </a>
+    <nav class="site-nav" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="contrasenas.html" aria-current="page">Contraseñas</a><a href="phishing.html">Phishing</a><a href="desafio.html">Desafío</a><a href="opinion.html">Opinión</a></nav>
+    <div class="nav-actions">
+      <button class="icon-btn" data-theme-toggle type="button" aria-label="Activar modo oscuro" title="Cambiar tema">🌙</button>
+      <button class="icon-btn menu-btn" data-menu-toggle type="button" aria-expanded="false" aria-label="Abrir menú">☰</button>
+    </div>
+  </div>
+</header>
+<main id="contenido">
+<section class="container page-hero">
+  <div>
+    <span class="eyebrow">Módulo 1 · Protección de cuentas</span>
+    <h1>Contraseñas <span class="gradient-text">más fuertes</span></h1>
+    <p class="lead">Una buena contraseña combina longitud, variedad y poca previsibilidad. En esta página podés aprender los criterios y probarlos con ejemplos inventados.</p>
+  </div>
+  <div class="visual-card"><img src="img/contrasena.svg" alt="Ilustración de un campo de contraseña y un indicador de seguridad"></div>
+</section>
+
+<section class="container section-tight">
+  <div class="grid-2">
+    <div class="card">
+      <h2>¿Qué conviene hacer?</h2>
+      <ul class="tip-list">
+        <li><span class="tick">✓</span><span>Elegir frases o combinaciones largas que sean difíciles de adivinar.</span></li>
+        <li><span class="tick">✓</span><span>Usar contraseñas diferentes para cuentas importantes.</span></li>
+        <li><span class="tick">✓</span><span>Combinar letras, números y símbolos cuando el servicio lo permita.</span></li>
+        <li><span class="tick">✓</span><span>Activar un segundo factor de autenticación cuando esté disponible.</span></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>¿Qué conviene evitar?</h2>
+      <ul class="tip-list">
+        <li><span class="tick">!</span><span>Nombres, fechas de nacimiento o datos fáciles de relacionar con vos.</span></li>
+        <li><span class="tick">!</span><span>Secuencias como 123456, qwerty o palabras demasiado comunes.</span></li>
+        <li><span class="tick">!</span><span>Compartir contraseñas por mensajes o dejarlas visibles.</span></li>
+        <li><span class="tick">!</span><span>Reutilizar exactamente la misma contraseña en todos los servicios.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="section-heading">
+    <span class="eyebrow">Actividad interactiva</span>
+    <h2>Probá el analizador de fortaleza</h2>
+    <p>Escribí una contraseña de ejemplo. La evaluación ocurre mientras escribís.</p>
+  </div>
+  <div class="demo-panel">
+    <label for="passwordDemo">Contraseña de ejemplo</label>
+    <div class="input-row">
+      <input class="field" id="passwordDemo" type="password" autocomplete="off" placeholder="Ej.: Nube-Pixel83!Bosque" aria-describedby="passwordHelp">
+      <button class="btn btn-secondary" id="togglePassword" type="button">Mostrar</button>
+    </div>
+    <p class="help" id="passwordHelp">No ingreses una contraseña real. Este ejercicio es solo educativo.</p>
+    <div class="strength-track" aria-hidden="true"><div class="strength-bar" id="strengthBar"></div></div>
+    <div><span class="strength-label" id="strengthLabel" data-level="0">Sin analizar</span> · <span class="muted" id="strengthTip">Escribí una contraseña de ejemplo para analizarla.</span></div>
+    <div class="checklist" aria-label="Criterios evaluados">
+      <div class="checkitem" data-check="long">✓ Al menos 12 caracteres</div>
+      <div class="checkitem" data-check="upper">✓ Una mayúscula</div>
+      <div class="checkitem" data-check="lower">✓ Una minúscula</div>
+      <div class="checkitem" data-check="number">✓ Un número</div>
+      <div class="checkitem" data-check="symbol">✓ Un símbolo</div>
+      <div class="checkitem" data-check="personal">✓ Sin patrones obvios</div>
+    </div>
+    <div class="hero-actions">
+      <button class="btn btn-primary" id="generatePassword" type="button">Generar ejemplo seguro</button>
+      <button class="btn btn-ghost" id="clearPassword" type="button">Limpiar</button>
+    </div>
+  </div>
+</section>
+
+<section class="container section-tight">
+  <div class="notice"><strong>Privacidad:</strong> el analizador trabaja únicamente con JavaScript dentro de esta página. No guarda ni envía la contraseña que escribas. Aun así, usá solo ejemplos inventados.</div>
+  <div class="hero-actions"><a class="btn btn-primary" href="phishing.html">Continuar con Phishing →</a><a class="btn btn-secondary" href="index.html">Volver al inicio</a></div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container footer-wrap">
+    <div><strong>Navega Seguro</strong><br><span>Proyecto educativo sobre ciudadanía y seguridad digital.</span></div>
+    <div>TPF Desarrollo Web · <span data-year></span></div>
+  </div>
+</footer>
+<script src="js/app.js"></script>
+<script src="js/contrasenas.js"></script>
+</body>
+</html>
